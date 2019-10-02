@@ -44,7 +44,7 @@ class FluidSynthSequencer(Sequencer):
     output = None
 
     def init(self):
-        self.fs = fs.Synth()
+        self.fs = fs.Synth(gain=1)
 
     def __del__(self):
         self.fs.delete()
